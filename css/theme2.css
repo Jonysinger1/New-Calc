@@ -1,0 +1,61 @@
+:root {
+    --bg-theme: #6495ED;
+    --bg-toggle-keypad: #00008B;
+    --bg-del-reset-key: #7FFF00;
+    --key-shadow-del-reset: #006400;
+    --bg-keys: #DC143C;
+    --key-shadow-keys: #8B0000;
+    --bg-result-toggle-key:  hsl(176, 100%, 44%);
+    --key-shadow-result: hsl(177, 92%, 70%);
+    --text-color: #F8F8FF;
+    --text-del-result-color: hsl(0, 0, 100%);
+    --text-result-color: #DC143C;
+}
+
+body {
+    background-color: var(--bg-theme);
+}
+
+label, h6 {
+    color: var(--text-color);
+}
+
+.header > h1 {
+    color: var(--text-color);
+}
+
+.input {
+    background-color: var(--bg-toggle-keypad);
+}
+
+input:checked {
+    background-color: var(--bg-result-toggle-key);
+}
+
+.user-input {
+    background-color: var(--bg-toggle-keypad);
+    color: var(--text-color);
+}
+
+.grid-container {
+    background-color: var(--bg-toggle-keypad);
+}
+
+.grid-container > button {
+    background-color: var(--bg-keys);
+    color: var(--text-color);
+    box-shadow: 0 5px var(--key-shadow-keys);
+}
+
+button:nth-child(17), button:nth-child(4) {
+    background-color: var(--bg-del-reset-key);
+    box-shadow: 0 5px var(--key-shadow-del-reset);
+    color: white;
+}
+
+button:nth-child(18) {
+    background-color: var(--bg-result-toggle-key);
+    box-shadow: 0 5px var(--key-shadow-result);
+    color: var(--text-result-color)
+}
+
